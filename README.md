@@ -14,6 +14,8 @@ Build LD Proxy image:
 
 ```sam build --use-container```
 
+# Deployment on AWS 
+
 Deploy on AWS following the instruction 
 
 ```sam deploy --guided```
@@ -27,5 +29,16 @@ Check if LD Proxy is operational:
 OpenAPI specification should be available on /prod/docs path, try this:
 
 ```curl https://1nrrr3dhei.execute-api.us-east-1.amazonaws.com/prod/docs```
+
+# How to test LD Proxy
+
+You can host your API locally by running: 
+
+```sam local start-api```
+
+Check if API is up and running:
+
+```curl http://127.0.0.1:3000/prod/ping```
+
 
 Further instructions are coming...
