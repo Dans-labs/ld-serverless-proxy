@@ -1,5 +1,5 @@
 # Linked Data Serverless Proxy
-Serverless LD Proxy implementation as Lambda function created on Amazon AWS.
+Serverless LD Proxy implemented as FastAPI framework deployed as Lambda function on Amazon AWS. Read more about [AWS Lambda](https://aws.amazon.com/lambda/) and how to setup [custom domain name](https://www.serverless.com/blog/serverless-api-gateway-domain) for the deployment.
 
 # Installation
 Install aws cli and run configuration setup
@@ -13,6 +13,10 @@ Install the AWS Serverless Application Model (SAM)
 Build LD Proxy image:
 
 ```sam build --use-container```
+
+# Create new role for AWS Lambda
+
+You have to set up a role that the AWS Lambda will assume within AWS account and grant required permissions. Go to the [IAM console](https://console.aws.amazon.com/iam/), select Roles and Create, and then choose Lambda as the service. Press next and it’ll take you to the Permissions tab, search for lambda and select the AWSLambdaBasicExecutionRole. Save new role with some name, for example, lambda-demo.
 
 # Deployment on AWS 
 
