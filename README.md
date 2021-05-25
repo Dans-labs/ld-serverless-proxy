@@ -61,5 +61,10 @@ Check if API is up and running:
 
 ```curl http://127.0.0.1:3000/prod/ping```
 
+# Memento protocol
+
+According to the [draft spec of LD Proxy](https://docs.google.com/document/d/1agXiNVWx5fm1ZDEodd4kzqTz8qipFnk2oqdhd1KiDVM/edit) it should support Memento protocol. There are a few libraries in the consideration:
+* [Memento Client](https://github.com/mementoweb/py-memento-client)
+* [pywb](https://pywb.readthedocs.io/_/downloads/en/develop/pdf/)
 
 Further instructions are coming...
