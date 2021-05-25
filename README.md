@@ -14,6 +14,25 @@ Build LD Proxy image:
 
 ```sam build --use-container```
 
+# Local deployment of LD Proxy
+
+You can run the application locally with uvicorn. Install the required dependencies first:
+``` 
+pip3 install httptools==0.1
+pip3 install uvloop>=0.14.0
+pip3 install uvicorn
+```
+
+Run the command:
+
+```uvicorn ld_proxy.main:app --host 0.0.0.0 --port 8080 --reload```
+
+App should be available on port 8080, test it:
+
+```
+curl http://0.0.0.0:8080/ping
+```
+
 # Create new role for AWS Lambda
 
 You have to set up a role that the AWS Lambda will assume within AWS account and grant required permissions. Go to the [IAM console](https://console.aws.amazon.com/iam/), select Roles and Create, and then choose Lambda as the service. Press next and it’ll take you to the Permissions tab, search for lambda and select the AWSLambdaBasicExecutionRole. Save new role with some name, for example, lambda-demo.
