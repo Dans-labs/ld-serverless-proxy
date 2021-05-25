@@ -18,9 +18,7 @@ Build LD Proxy image:
 
 You can run the application locally with uvicorn. Install the required dependencies first:
 ``` 
-pip3 install httptools==0.1
-pip3 install uvloop>=0.14.0
-pip3 install uvicorn
+pip3 install -r requirements.txt
 ```
 
 Run the command:
