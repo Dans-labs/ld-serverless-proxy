@@ -2,6 +2,8 @@
 Serverless LD Resolver implemented as FastAPI framework and could be deployed as Lambda function on Amazon AWS. 
 Read more about [AWS Lambda](https://aws.amazon.com/lambda/), some instructions available how to setup [custom domain name](https://www.serverless.com/blog/serverless-api-gateway-domain) for the deployment.
 
+This LD Resolver was developed as a microservice that could be used as a central service for the whole Dataverse network in order to build a sustainable Linked Data infrastructure with external controlled vocabularies values (CVV) support. Please read the [proposal](https://docs.google.com/document/d/1txdcFuxskRx_tLsDQ7KKLFTMR_r9IBhorDu3V_r445w/edit?disco=AAAAIP4zcDQ&ts=607451c0&usp_dm=false) to get more details.
+
 # Installation
 Install aws cli and run configuration setup
 
